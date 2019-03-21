@@ -1,31 +1,35 @@
 <template>
     <div class="body-cadastro">
-        <div class="overlay-login"></div>
-        <div class="leftside-login">
-            <img class="login-img" src="../../assets/login-image.png">
+        <!-- Leftside -->
+        <div class="cadastro-leftside">
+            <img class="cadastro-img" src="../../assets/login-image.png">
         </div>
-        <div class="rightside-login">
-            <div class="card-login">
-                <h1 class="title-login">Cadastre-se</h1>
-                <div class="input-login">
-                    <h2 class="subtitle-login">Usuário</h2>
-                    <input  class="input" type="email" name="input-email" placeholder="E-Mail...">
+        <!-- Rightside -->
+        <div class="cadastro-rightside">
+            <div class="cadastro-card">
+                <h1 class="cadastro-title">Cadastre-se</h1>
+                
+                <!-- Email -->
+                <div class="cadastro-email">
+                    <h2 class="subtitle-login">Email</h2>
+                    <input  class="input" type="email" placeholder="Insira seu e-mail...">
                 </div>
-                <div class="input-login">
+
+                <!-- Senha -->
+                <div class="cadastro-password">
                     <h2 class="subtitle-login">Senha</h2>
-                    <input class="input" type="password" name="input-password" placeholder="Senha...">
+                    <input class="input" type="password" placeholder="Insira sua senha...">
                 </div>
-                <div class="input-login">
+
+                <!-- <div class="input-login">
                     <h2 class="subtitle-login">Confirme a Senha</h2>
                     <input class="input" type="password" name="input-password" placeholder="Senha...">
-                </div>
-                <div class="wrapper-btn-login">
-                    <form class="form-btn-login" method="GET" action="main-page">
-                        <button class="btn-cadastro">Cadastre-se</button>
-                    </form>
-                    <form class="form-btn-login" method="GET" action="login">
-                        <button class="btn-login">Voltar para Login</button>
-                    </form>
+                </div> -->
+
+                <!-- Button Cadastro e Voltar para Login -->
+                <div class="cadastro-wrapper-btn">
+                        <button class="btn-cadastro" @click="getCadastro">Cadastre-se</button>
+                        <a href="/"><button class="btn-login">Voltar para Login</button></a>
                 </div>
             </div>
         </div>
@@ -36,7 +40,26 @@
 export default {
     data(){
         return{
-            
+            dadosCadastrais: {
+                email: "",
+                senha: "",
+            }
+        }
+    },
+    methods: {
+        getCadastro(){
+            console.log("Teste")
+            this.$http
+            .post("Cadastro/usuario", {
+                email: this.dadosCadastrais.email,
+                senha: this.dadosCadastrais.senha
+            })
+            .then(({ data }) => {
+                console.log(data)
+            })
+            .catch(err => {
+            console.log(err)
+          })
         }
     }
 }

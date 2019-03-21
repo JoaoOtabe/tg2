@@ -2,24 +2,14 @@
 @import 'src/scss/variaveis';
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 
-button, a{
-	cursor: pointer;
-}
+
 
 .body-login{
     width: 100%;
     height: 100vh;
     display: flex;
     font-family: 'Poppins', sans-serif;
-    >.overlay-login{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
-        background: linear-gradient( to bottom, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8)); 
-        align-self: flex-start;
-    }
-    >.leftside-login{
+    >.login-leftside{
         display: flex;
         width: 100%;
         height: 100%;
@@ -28,8 +18,15 @@ button, a{
             height: 100%;
             object-fit: cover;
         }
+        &::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( to bottom, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+        }
     }
-    >.rightside-login{
+    >.login-rightside{
         width: 65%;
         height: 100%;
         z-index: 2;
@@ -38,19 +35,39 @@ button, a{
         flex-direction: column;
         align-items: flex-start;
         border-radius: 2px;
-        >.card-login{
+        >.login-card{
             width: 75%;
             height: 100%;
             margin-top: 65px;
             margin-left: 55px;
             margin-bottom: 40px;
-            >.title-login{
+            // align-content: center;
+            // justify-content: center;
+            >.login-title{
                 font-size: 2.5em;
                 line-height: 1.5;
                 color: #333;
                 font-weight: 700;
             }
-            >.input-login{
+            >.login-email{
+                width: 80%;
+                margin-top: 15%;
+                display: flex;
+                flex-direction: column;
+                >.subtitle-login{
+                    font-size: 1.5em;
+                    margin-bottom: 6.5%;
+                }
+                >.input{
+                    border: none;
+                    color: #ccc;
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    border-bottom: 2px solid #dbdbdb;
+                }
+            }
+            >.login-password{
                 width: 80%;
                 margin-top: 15%;
                 display: flex;
@@ -73,54 +90,52 @@ button, a{
                     margin-top: 2.5%;
                 }
             }
-            >.wrapper-btn-login{
+            >.login-wrapper-btn{
                 width: 95%;
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
-                >.form-btn-login{
                     >.btn-login{
                         width: 150px;
                         height: 45px;
                         padding: 0 25px;
                         margin-top: 45px;
+                        margin-bottom: 20px;
                         border-radius: 40px;
                         outline: none !important;
-                        border: none;
-                        background: 0 0;
                         font-family: 'Poppins';
                         font-weight: 500;
                         color: $white;
                         background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
                         transition: all 0.3s ease 0s;
                         &:hover {
-                            width: 215px;
+                            width: 225px;
                             background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
                         }
                     }
-                    >.btn-cadastro{
-                        width: 150px;
-                        height: 45px;
-                        padding: 0 25px;
-                        margin-top: 45px;
-                        border-radius: 40px;
-                        outline: none !important;
-                        border: none;
-                        background: 0 0;
-                        font-family: 'Poppins';
-                        font-weight: 500;
-                        color: $white;
-                        background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                        transition: all 0.3s ease 0s;
-                        &:hover {
-                            width: 215px;
-                            background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                    >a{
+                        >.btn-cadastro{
+                            width: 150px;
+                            height: 45px;//Arrumar pelo padding
+                            padding: 0 0;
+                            margin-top: 45px;
+                            border-radius: 40px;
+                            outline: none !important;
+                            border: none;
+                            background: 0 0;
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                            color: $white;
+                            background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                            transition: all 0.3s ease 0s;
+                            &:hover {
+                                width: 225px;
+                                background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
                         }
                     }
-                }
-                
-                
-            }
-            
+
+                    }
+            }  
         }
     }
 
@@ -131,25 +146,24 @@ button, a{
     height: 100vh;
     display: flex;
     font-family: 'Poppins', sans-serif;
-    >.overlay-login{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
-        background: linear-gradient( to bottom, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8)); 
-        align-self: flex-start;
-    }
-    >.leftside-login{
+    >.cadastro-leftside{
         display: flex;
         width: 100%;
         height: 100%;
-        >.login-img{
+        >.cadastro-img{
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+        &::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( to bottom, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+        }
     }
-    >.rightside-login{
+    >.cadastro-rightside{
         width: 65%;
         height: 100%;
         z-index: 2;
@@ -158,19 +172,19 @@ button, a{
         flex-direction: column;
         align-items: flex-start;
         border-radius: 2px;
-        >.card-login{
+        >.cadastro-card{
             width: 75%;
             height: 100%;
             margin-top: 50px;
             margin-left: 55px;
             margin-bottom: 40px;
-            >.title-login{
+            >.cadastro-title{
                 font-size: 2.5em;
                 line-height: 1.5;
                 color: #333;
                 font-weight: 700;
             }
-            >.input-login{
+            >.cadastro-email{
                 width: 80%;
                 margin-top: 10%;
                 display: flex;
@@ -187,17 +201,30 @@ button, a{
                     font-size: 20px;
                     border-bottom: 2px solid #dbdbdb;
                 }
-                >.forgot-password-login{
-                    align-self: flex-end;
-                    font-size: .9em;
-                    margin-top: 2.5%;
+            }
+            >.cadastro-password{
+                width: 80%;
+                margin-top: 10%;
+                display: flex;
+                flex-direction: column;
+                >.subtitle-login{
+                    font-size: 1.5em;
+                    margin-bottom: 6.5%;
+                }
+                >.input{
+                    border: none;
+                    color: #ccc;
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    border-bottom: 2px solid #dbdbdb;
                 }
             }
-            >.wrapper-btn-login{
+            >.cadastro-wrapper-btn{
                 width: 95%;
                 display: flex;
                 justify-content: space-between;
-                >.form-btn-login{
+
                     >.btn-login{
                         width: 150px;
                         height: 45px;
@@ -236,11 +263,10 @@ button, a{
                             background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
                         }
                     }
-                }
-                
-                
-            }
-            
+                    // >a{
+                                                                                                    
+                    // }
+                }           
         }
     }
 
@@ -364,56 +390,4 @@ button, a{
         }
     }
 
-}
-
-.body-home{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    >.wrapper-btn-login{
-        width: 95%;
-        display: flex;
-        justify-content: space-between;
-        >.form-btn-login{
-            >.btn-login{
-                width: 150px;
-                height: 45px;
-                padding: 0 25px;
-                margin-top: 45px;
-                border-radius: 40px;
-                outline: none !important;
-                border: none;
-                background: 0 0;
-                font-family: 'Poppins';
-                font-weight: 500;
-                color: $white;
-                background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                transition: all 0.3s ease 0s;
-                &:hover {
-                    width: 215px;
-                    background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                }
-            }
-            >.btn-cadastro{
-                width: 150px;
-                height: 45px;
-                padding: 0 25px;
-                margin-top: 45px;
-                border-radius: 40px;
-                outline: none !important;
-                border: none;
-                background: 0 0;
-                font-family: 'Poppins';
-                font-weight: 500;
-                color: $white;
-                background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                transition: all 0.3s ease 0s;
-                &:hover {
-                    width: 215px;
-                    background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                }
-            }
-        }
-    } 
 }
