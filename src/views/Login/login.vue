@@ -13,23 +13,21 @@
                 <!-- Email -->
                 <div class="login-email">
                     <label class="login-email-subtitle">Email</label>
-                    <input  class="input" type="email" v-model="email" placeholder="E-Mail...">
+                    <input  class="login-email-field" type="email" v-model="email" placeholder="E-Mail...">
                 </div>
 
                 <!-- Senha -->
                 <div class="login-password">
                     <label class="login-password-subtitle">Senha</label>
-                    <input class="input" type="password" v-model="senha" placeholder="Senha...">
-                    <!-- <router-link to="/forgot-password" class="forgot-password-login">Esqueci minha senha</router-link> -->
+                    <input class="login-password-field" type="password" v-model="senha" placeholder="Senha...">
+                    <router-link to="/forgot-password" class="forgot-password-login">Esqueci minha senha</router-link>
                 </div>
 
                 <!-- Button Login e Cadastro -->
                 <div class="login-wrapper-btn">
-
                     <button class="btn-login" @click="getLogin">Login</button>
-                    <a href="/cadastro"><button class="btn-cadastro">Ir para Cadastro</button></a>
-
-                    <a href="/login-gym"><button class="btn-gym">Sou Academia</button></a>
+                    <router-link tag="button" to="/cadastro" class="btn-cadastro">Ir para Cadastro</router-link>
+                    <router-link tag="button" to="/login-gym" class="btn-to-gym">Sou Academia</router-link>
                 </div>
 
             </div>

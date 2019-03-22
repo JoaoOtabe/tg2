@@ -6,6 +6,7 @@ import cadastro from '../views/Cadastro/cadastro.vue'
 import mainPage from '../views/Main-Page/main-page.vue'
 import forgotPassword from '../views/Forgot-Password/forgot-password.vue'
 import loginGym from '../views/Login/login-gym.vue'
+import cadastroGym from '../views/Cadastro/cadastro-gym.vue'
 
 Vue.use(Router)
 
@@ -14,7 +15,8 @@ export const constantRouterMap = [
     { path: '/cadastro', name: 'cadastro', component: cadastro},
     { path: '/main-page', name: 'mainPage', component: mainPage},
     { path: '/forgot-password', name: 'forgot-password', component: forgotPassword},
-    { path: '/login-gym', name: 'login-gym', component: loginGym}
+    { path: '/login-gym', name: 'login-gym', component: loginGym},
+    { path: '/cadastro-gym', name: 'cadastro-gym', component: cadastroGym},
 ]
 
 export default new Router({

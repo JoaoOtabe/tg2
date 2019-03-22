@@ -20,15 +20,13 @@
                 <div class="login-password">
                     <h2 class="subtitle-login">Senha</h2>
                     <input class="input" type="password" v-model="senha" placeholder="Senha...">
-                    <!-- <router-link to="/forgot-password" class="forgot-password-login">Esqueci minha senha</router-link> -->
+                    <router-link to="/forgot-password" class="forgot-password-login">Esqueci minha senha</router-link>
                 </div>
 
                 <!-- Button Login e Cadastro -->
                 <div class="login-wrapper-btn">
-
                     <button class="btn-login" @click="getLogin">Login</button>
-                    <a href="/cadastro"><button class="btn-cadastro">Ir para Cadastro</button></a>
-
+                    <a href="/cadastro-gym"><button class="btn-cadastro">Ir para Cadastro</button></a>
                 </div>
 
             </div>

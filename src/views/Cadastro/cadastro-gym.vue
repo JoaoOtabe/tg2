@@ -2,7 +2,7 @@
     <div class="body-cadastro">
         <!-- Leftside -->
         <div class="cadastro-leftside">
-            <img class="cadastro-img" src="../../assets/login-image.png">
+            <img class="cadastro-img" src="../../assets/gym.jpg">
         </div>
         <!-- Rightside -->
         <div class="cadastro-rightside">
