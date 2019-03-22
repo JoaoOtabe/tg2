@@ -8,7 +8,7 @@
         <div class="cadastro-rightside">
             <div class="cadastro-card">
                 <h1 class="cadastro-title">Cadastre-se</h1>
-                
+
                 <!-- Email -->
                 <div class="cadastro-email">
                     <h2 class="subtitle-login">Email</h2>
@@ -21,10 +21,11 @@
                     <input class="input" type="password" v-model="senha" placeholder="Insira sua senha...">
                 </div>
 
-                <!-- <div class="input-login">
+                <!-- Confirmar Senha -->
+                <div class="cadastro-password-confirm">
                     <h2 class="subtitle-login">Confirme a Senha</h2>
-                    <input class="input" type="password" name="input-password" placeholder="Senha...">
-                </div> -->
+                    <input class="input" type="password" name="input-password" placeholder="Repita sua senha...">
+                </div>
 
                 <!-- Button Cadastro e Voltar para Login -->
                 <div class="cadastro-wrapper-btn">

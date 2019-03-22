@@ -1,8 +1,8 @@
 <template>
-    <div class="body-login">
+    <div class="body-login-gym">
         <!-- Leftside -->
         <div class="login-leftside">
-            <img class="login-img" src="../../assets/login-image.png">
+            <img class="login-img" src="../../assets/gym.jpg">
         </div>
 
         <!-- Rightside -->
@@ -27,7 +27,7 @@
                 <div class="login-wrapper-btn">
 
                     <button class="btn-login" @click="getLogin">Login</button>
-                    <a href="/cadastro"><button class="btn-cadastro">Cadastre-se</button></a>
+                    <a href="/cadastro"><button class="btn-cadastro">Ir para Cadastro</button></a>
 
                 </div>
 

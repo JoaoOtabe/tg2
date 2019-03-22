@@ -1,5 +1,6 @@
 <template>
     <div class="body-login">
+
         <!-- Leftside -->
         <div class="login-leftside">
             <img class="login-img" src="../../assets/login-image.png">
@@ -12,13 +13,13 @@
 
                 <!-- Email -->
                 <div class="login-email">
-                    <h2 class="subtitle-login">Email</h2>
+                    <label class="login-email-subtitle">Email</label>
                     <input  class="input" type="email" v-model="email" placeholder="E-Mail...">
                 </div>
 
                 <!-- Senha -->
                 <div class="login-password">
-                    <h2 class="subtitle-login">Senha</h2>
+                    <label class="login-password-subtitle">Senha</label>
                     <input class="input" type="password" v-model="senha" placeholder="Senha...">
                     <!-- <router-link to="/forgot-password" class="forgot-password-login">Esqueci minha senha</router-link> -->
                 </div>
@@ -27,7 +28,7 @@
                 <div class="login-wrapper-btn">
 
                     <button class="btn-login" @click="getLogin">Login</button>
-                    <a href="/cadastro"><button class="btn-cadastro">Cadastre-se</button></a>
+                    <a href="/cadastro"><button class="btn-cadastro">Ir para Cadastro</button></a>
 
                     <a href="/login-gym"><button class="btn-gym">Sou Academia</button></a>
                 </div>
@@ -49,7 +50,6 @@ export default {
     },
     methods: {
         getLogin() {
-            console.log("Teste")
             this.$http
             .post("Consulta/usuario_login", {
                 email: this.email,
@@ -59,8 +59,7 @@ export default {
                 console.log(data)
             })
             .catch(err => {
-                console.log(err)
-                alert("Erro!")       
+                alert("Erro!", err)       
             })
         }
     }
