@@ -29,7 +29,6 @@
                     <button class="btn-login" @click="getLogin">Login</button>
                     <a href="/cadastro"><button class="btn-cadastro">Cadastre-se</button></a>
 
-                    <a href="/login-gym"><button class="btn-gym">Sou Academia</button></a>
                 </div>
 
             </div>

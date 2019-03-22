@@ -1,20 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import home from '../views/Home/home.vue'
 import login from '../views/Login/login.vue'
 import cadastro from '../views/Cadastro/cadastro.vue'
 import mainPage from '../views/Main-Page/main-page.vue'
 import forgotPassword from '../views/Forgot-Password/forgot-password.vue'
+import loginGym from '../views/Login/login-gym.vue'
 
 Vue.use(Router)
 
 export const constantRouterMap = [
-    { path: '', name: 'home', component: home },
-    { path: '/login', name: 'login', component: login },
+    { path: '/', name: 'login', component: login },
     { path: '/cadastro', name: 'cadastro', component: cadastro},
     { path: '/main-page', name: 'mainPage', component: mainPage},
     { path: '/forgot-password', name: 'forgot-password', component: forgotPassword},
+    { path: '/login-gym', name: 'login-gym', component: loginGym}
 ]
 
 export default new Router({
