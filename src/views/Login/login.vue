@@ -1,6 +1,5 @@
 <template>
     <div class="body-login">
-
         <!-- Leftside -->
         <div class="login-leftside">
             <img class="login-img" src="../../assets/login-image.png">
