@@ -26,8 +26,10 @@
                 <!-- Button Login e Cadastro -->
                 <div class="login-wrapper-btn">
                     <button class="btn-login" @click="getLogin">Login</button>
-                    <router-link tag="button" to="/cadastro" class="btn-cadastro">Ir para Cadastro</router-link>
-                    <router-link tag="button" to="/login-gym" class="btn-to-gym">Sou Academia</router-link>
+                    <div class="login-wrapper-cadastro-souGym">
+                        <router-link tag="button" to="/cadastro" class="btn-cadastro">Ir para Cadastro</router-link>
+                        <router-link tag="button" to="/login-gym" class="btn-to-gym">Sou Academia</router-link>
+                    </div>
                 </div>
 
             </div>
@@ -56,7 +58,7 @@ export default {
                 console.log(data)
             })
             .catch(err => {
-                alert("Erro!", err)       
+                alert(err)       
             })
         }
     }

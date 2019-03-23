@@ -6,7 +6,7 @@
 
 .body-login{
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 55% 40%;
     >.login-leftside{
         width: 100%;
         height: 100vh;
@@ -24,130 +24,138 @@
         }
     }
     >.login-rightside{
-        // width: 100%;
-        // height: 100%;
         z-index: 2;
         background-color: $white;
-
-        // align-items: flex-start;
         border-radius: 2px;
         >.login-card{
             width: 100%;
             height: 100%;
-
-            // margin-top: 65px;
-            // margin-left: 55px;
-            // margin-bottom: 40px;
+            margin-top: 10%;
+            margin-left: 15%;
+            margin-bottom: 10%;
             >.login-title{
-            //     font-weight: 700;
-            //     // font-size: 2.5em;
-            //     // line-height: 1.5;
-            //     color: #333; //Adicionar variável para cor
+                // margin-top: 10%;
+                // margin-left: 10%;
+                font-weight: 700;
+                font-size: 2.5em;
+                color: #333; //Adicionar variável para cor
             }
             >.login-email{
-            //     // width: 80%;
+                width: 65%;
                 display: block;
-            //     // margin-top: 15%;
-            //     >.login-email-subtitle{
-            //         // margin-bottom: 6.5%;
-            //         font-size: 1.5em;
-            //     }
-            //     >.login-email-field{
-            //         // width: 100%;
-            //         // height: 25px;
-            //         border: none;
-            //         color: #ccc; //Adicionar variável para cor
-            //         // font-size: 20px;//Deixar em EM
-            //         // border-bottom: 2px solid #dbdbdb;
-            //     }
+                margin-top: 15%;
+                >.login-email-subtitle{
+                    margin-bottom: 6.5%;
+                    font-size: 1.5em;
+                }
+                 >.login-email-field{
+                    width: 100%;
+                    // height: 25px;
+                    margin-top: 5%;
+                    border: none;
+                    color: #ccc; //Adicionar variável para cor
+                    font-size: 20px;//Deixar em EM
+                    border-bottom: 2px solid #dbdbdb;
+                }
             }
             >.login-password{
-                // width: 80%;
-                // margin-top: 15%;
-                display: block;
+                width: 65%;
+                margin-top: 15%;
+                display: flex;
+                flex-direction: column;
                 >.login-password-subtitle{
-                    // font-size: 1.5em;
-                    // margin-bottom: 6.5%;
+                    font-size: 1.5em;
                 }
                 >.login-password-field{
-                //     // width: 100%;
-                //     // height: 25px;
-                //     border: none;
-                //     color: #ccc;
-                //     font-size: 20px;// Deixar em EM
-                //     border-bottom: 2px solid #dbdbdb;
+                    width: 100%;
+                    // height: 25px;
+                    margin-top: 5%;
+                    border: none;
+                    color: #ccc;
+                    font-size: 20px;// Deixar em EM
+                    border-bottom: 2px solid #dbdbdb;
                 }
                 >.forgot-password-login{
-                //     // margin-top: 2.5%;
-                //     // align-self: flex-end;
-                //     font-size: .9em;
+                    margin-top: 2.5%;
+                    align-self: flex-end;
+                    font-size: .9em;
                 }
             }
             >.login-wrapper-btn{
-                // width: 95%;
+                width: 70%;
+                height: 80%;
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-between;
-                    >.btn-login{
-                    //     // width: 150px;
-                    //     // height: 45px;
-                    //     // padding: 0 25px;
-                        margin-top: 45px;
-                        margin-bottom: 20px;
-                    //     border-radius: 40px;
-                    //     outline: none !important;
-                    //     font-family: 'Poppins';
-                    //     font-weight: 500;
-                    //     color: $white;
-                    //     background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                    //     transition: all 0.3s ease 0s;
-                    //     &:hover {
-                    //         width: 225px;
-                    //         background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                    //     }
+                margin-top: 5%;
+                >.btn-login{
+                    width: 260px;
+                    height: 45px;
+                    padding: 0 25px;
+                    margin-top: 45px;
+                    margin-bottom: 20px;
+                    border-radius: 40px;
+                    align-self: center;
+                    outline: none !important;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    color: $white;
+                    background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                    transition: all 0.3s ease 0s;
+                    &:hover {
+                        width: 200px;
+                        background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
                     }
+                }
+                >.login-wrapper-cadastro-souGym{
+                    display: flex;
+                    margin-left: 12%;
+                    margin-top: 10%;
                     >.btn-cadastro{
-                    //     // width: 150px;
-                    //     // height: 45px;//Arrumar pelo padding
-                    //     // padding: 0 0;
-                    //     border-radius: 40px;
-                    //     outline: none !important;
-                    //     border: none;
+                        width: 150px;
+                        height: 45px;//Arrumar pelo padding
+                        padding: 0 0;
+                        border-radius: 40px;
+                        outline: none !important;
+                        border: none;
                         margin-top: 45px;
                         margin-bottom: 20px;
-                    //     background: 0 0;
-                    //     font-family: 'Poppins';
-                    //     font-weight: 500;
-                    //     color: $white;
-                    //     background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                    //     transition: all 0.3s ease 0s;
-                    //     &:hover {
-                    //         width: 225px;
-                    //         background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
-                        // }
+                        background: 0 0;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        color: $white;
+                        background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        transition: all 0.3s ease 0s;
+                        &:hover {
+                            width: 140px;
+                            background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        }
                     }
                     >.btn-to-gym{
-                //         // width: 150px;
-                //         // height: 45px;//Arrumar pelo padding
-                //         // padding: 0 0;
-                //         // margin-top: 20px;
-                //         border-radius: 40px;
-                //         outline: none !important;
-                //         border: none;
+                        width: 150px;
+                        height: 45px;//Arrumar pelo padding
+                        padding: 0 0;
+                        // margin-top: 20px;
+                        align-self: flex-end;
+                        margin-left: 20%;
+                        border-radius: 40px;
+                        outline: none !important;
+                        border: none;
                         margin-top: 45px;
                         margin-bottom: 20px;
-                //         background: 0 0;
-                //         font-family: 'Poppins';
-                //         font-weight: 500;
-                //         color: $white;
-                //         background: linear-gradient(to left, rgba(149, 30, 247, 0.8),rgba(197, 99, 241, 0.8));
-                //         transition: all 0.3s ease 0s;
-                //         &:hover {
-                //             width: 225px;
-                //             background: linear-gradient(to left, rgba(125, 84, 158, 0.8),rgb(195, 124, 228));
-                //     }
+                        background: 0 0;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        color: $white;
+                        background: linear-gradient(to left, rgba(149, 30, 247, 0.8),rgba(197, 99, 241, 0.8));
+                        transition: all 0.3s ease 0s;
+                        &:hover {
+                            width: 140px;
+                            background: linear-gradient(to left, rgba(125, 84, 158, 0.8),rgb(195, 124, 228));
+                        }
+                    }
                 }
-            }  
+
+            }
         }
     }
 
@@ -372,7 +380,7 @@
                 justify-content: space-between;
                 >.form-btn-login{
                     >.btn-login{
-                        width: 150px;
+                        width: 200px;
                         height: 45px;
                         padding: 0 25px;
                         margin-top: 45px;
@@ -571,6 +579,283 @@
 
                     }
             }  
+        }
+    }
+
+}
+
+.body-cadastro-gym{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    >.login-leftside{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        >.login-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( to bottom, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+        }
+    }
+    >.login-rightside{
+        width: 65%;
+        height: 100%;
+        z-index: 2;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 2px;
+        >.login-card{
+            width: 75%;
+            height: 100%;
+            margin-top: 65px;
+            margin-left: 55px;
+            margin-bottom: 40px;
+            // align-content: center;
+            // justify-content: center;
+            >.login-title{
+                font-size: 2.5em;
+                line-height: 1.5;
+                color: #333;
+                font-weight: 700;
+            }
+            >.login-email{
+                width: 80%;
+                margin-top: 15%;
+                display: flex;
+                flex-direction: column;
+                >.subtitle-login{
+                    font-size: 1.5em;
+                    margin-bottom: 6.5%;
+                }
+                >.input{
+                    border: none;
+                    color: #ccc;
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    border-bottom: 2px solid #dbdbdb;
+                }
+            }
+            >.login-password{
+                width: 80%;
+                margin-top: 15%;
+                display: flex;
+                flex-direction: column;
+                >.subtitle-login{
+                    font-size: 1.5em;
+                    margin-bottom: 6.5%;
+                }
+                >.input{
+                    border: none;
+                    color: #ccc;
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    border-bottom: 2px solid #dbdbdb;
+                }
+                >.forgot-password-login{
+                    align-self: flex-end;
+                    font-size: .9em;
+                    margin-top: 2.5%;
+                }
+            }
+            >.login-wrapper-btn{
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                    >.btn-login{
+                        width: 150px;
+                        height: 45px;
+                        padding: 0 25px;
+                        margin-top: 45px;
+                        margin-bottom: 20px;
+                        border-radius: 40px;
+                        outline: none !important;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        color: $white;
+                        background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        transition: all 0.3s ease 0s;
+                        &:hover {
+                            width: 225px;
+                            background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        }
+                    }
+                    >a{
+                        >.btn-cadastro{
+                            width: 150px;
+                            height: 45px;//Arrumar pelo padding
+                            padding: 0 0;
+                            margin-top: 45px;
+                            border-radius: 40px;
+                            outline: none !important;
+                            border: none;
+                            background: 0 0;
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                            color: $white;
+                            background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                            transition: all 0.3s ease 0s;
+                            &:hover {
+                                width: 225px;
+                                background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        }
+                    }
+
+                    >.btn-gym{
+                        width: 150px;
+                        height: 45px;//Arrumar pelo padding
+                        padding: 0 0;
+                        margin-top: 45px;
+                        border-radius: 40px;
+                        outline: none !important;
+                        border: none;
+                        background: 0 0;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        color: $white;
+                        background: linear-gradient(to left, rgba(149, 30, 247, 0.8),rgba(197, 99, 241, 0.8));
+                        transition: all 0.3s ease 0s;
+                        &:hover {
+                            width: 225px;
+                            background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                    }
+                }
+
+                    }
+            }  
+        }
+    }
+
+}
+
+.body-forgot-password-gym{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    >.overlay-login{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient( to bottom, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8)); 
+        align-self: flex-start;
+    }
+    >.leftside-login{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        >.login-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    >.rightside-login{
+        width: 65%;
+        height: 100%;
+        z-index: 2;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 2px;
+        >.card-login{
+            width: 75%;
+            height: 100%;
+            margin-top: 65px;
+            margin-left: 55px;
+            margin-bottom: 40px;
+            >.title-login{
+                font-size: 2.5em;
+                line-height: 1.5;
+                color: #333;
+                font-weight: 700;
+            }
+            >.input-login{
+                width: 80%;
+                margin-top: 15%;
+                display: flex;
+                flex-direction: column;
+                >.subtitle-login{
+                    font-size: 1.5em;
+                    margin-bottom: 6.5%;
+                }
+                >.input{
+                    border: none;
+                    color: #ccc;
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    border-bottom: 2px solid #dbdbdb;
+                }
+                >.forgot-password-login{
+                    align-self: flex-end;
+                    font-size: .9em;
+                    margin-top: 2.5%;
+                }
+            }
+            >.wrapper-btn-login{
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                >.form-btn-login{
+                    >.btn-login{
+                        width: 150px;
+                        height: 45px;
+                        padding: 0 25px;
+                        margin-top: 45px;
+                        border-radius: 40px;
+                        outline: none !important;
+                        border: none;
+                        background: 0 0;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        color: $white;
+                        background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        transition: all 0.3s ease 0s;
+                        &:hover {
+                            width: 215px;
+                            background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        }
+                    }
+                    >.btn-cadastro{
+                        width: 150px;
+                        height: 45px;
+                        padding: 0 25px;
+                        margin-top: 45px;
+                        border-radius: 40px;
+                        outline: none !important;
+                        border: none;
+                        background: 0 0;
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        color: $white;
+                        background: linear-gradient(to left, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        transition: all 0.3s ease 0s;
+                        &:hover {
+                            width: 215px;
+                            background: linear-gradient(to right, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+                        }
+                    }
+                }
+                
+                
+            }
+            
         }
     }
 
