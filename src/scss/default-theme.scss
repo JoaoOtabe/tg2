@@ -6,7 +6,7 @@
 
 .body-login{
     display: grid;
-    grid-template-columns: 55% 40%;
+    grid-template-columns: 60% 35%;
     >.login-leftside{
         width: 100%;
         height: 100vh;
@@ -30,9 +30,9 @@
         >.login-card{
             width: 100%;
             height: 100%;
-            margin-top: 10%;
-            margin-left: 15%;
-            margin-bottom: 10%;
+            // margin-top: 10%;
+            // margin-left: 15%;
+            // margin-bottom: 10%;
             >.login-title{
                 // margin-top: 10%;
                 // margin-left: 10%;
@@ -45,7 +45,7 @@
                 display: block;
                 margin-top: 15%;
                 >.login-email-subtitle{
-                    margin-bottom: 6.5%;
+                    // margin-bottom: 6.5%;
                     font-size: 1.5em;
                 }
                  >.login-email-field{
@@ -82,8 +82,6 @@
                 }
             }
             >.login-wrapper-btn{
-                width: 70%;
-                height: 80%;
                 display: flex;
                 flex-direction: column;
                 margin-top: 5%;
@@ -108,8 +106,6 @@
                 }
                 >.login-wrapper-cadastro-souGym{
                     display: flex;
-                    margin-left: 12%;
-                    margin-top: 10%;
                     >.btn-cadastro{
                         width: 150px;
                         height: 45px;//Arrumar pelo padding

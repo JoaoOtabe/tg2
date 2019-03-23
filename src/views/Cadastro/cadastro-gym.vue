@@ -47,14 +47,14 @@ export default {
     },
     methods: {
         getCadastro(){
-            console.log("Teste")
             this.$http
-            .post("Cadastro/usuario", {
+            .post("Cadastro/academia", {
                 email: this.email,
                 senha: this.senha
             })
             .then(({ data }) => {
                 console.log(data)
+                alert(data.status)
             })
             .catch(err => {
             console.log(err)

@@ -46,19 +46,18 @@ export default {
     },
     methods: {
         getLogin() {
-            console.log("Teste")
-            this.$http
-            .post("Consulta/usuario_login", {
+             this.$http
+            .post("Consulta/cliente_login", {
                 email: this.email,
                 senha: this.senha
             })
             .then(({ data }) => {
                 console.log(data)
+                alert(data.status)
             })
             .catch(err => {
-                console.log(err)
-                alert("Erro!")       
-            })
+                this.alert(err)       
+            })  
         }
     }
 }

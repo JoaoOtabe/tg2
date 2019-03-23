@@ -47,7 +47,6 @@ export default {
     },
     methods: {
         getCadastro(){
-            console.log("Teste")
             this.$http
             .post("Cadastro/usuario", {
                 email: this.email,
@@ -55,6 +54,7 @@ export default {
             })
             .then(({ data }) => {
                 console.log(data)
+                alert(data.status)
             })
             .catch(err => {
             console.log(err)
