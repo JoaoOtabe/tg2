@@ -4,21 +4,55 @@
 
 
 
-.header-main {
-  border-bottom: 2px solid red;
-  width: 100%;
-  height: 10px;
-
-  > .header-estilo {
+header{
     width: 100%;
-    height: 10px;
-  }
-  > .cabecalio-usu {
-    width: 26%;
-    height: 10px;
-    float: left;
-    background-color: red;
-  }
+    height: 53px;
+}
+.cabecalio-mainPage{
+    border-bottom: 2px solid rgba(195, 160, 216, 0.651);
+    background-color: rgba(243, 198, 223, 0.651);
+    >.cab-perfil-mainPage{
+        width: 17%;
+        height: 100%;
+        float: left;
+        background-color: rgba(197, 99, 241, 0.651);
+        >.img-perfil-main-page{
+            margin-top: 6px;
+            margin-left: 6px;
+            border: 1px solid red;
+            border-radius: 100px;  
+            padding: 1px; 
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.5s;
+
+            }
+        }
+
+        >.txt-nome-usuario{
+            width: 100%;
+            height: 100%;
+            padding-top: 10px;
+        }
+    }
+
+    >.cab-abas-mainPage{
+        width: 30%;
+        height: 100%;
+        float: left;
+        >.img-aba-main-page{
+            margin-top: 6px;
+            margin-left: 6px;
+            border: 1px solid red;
+            border-radius: 100px;  
+            padding: 1px; 
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+    }
+
 }
 
 
