@@ -6,25 +6,27 @@
             </section>
             
             <section class="cab-aba-central">
-                <h1>Nome da ABA (Ou qualquer outra coisa)</h1>
+                <span>Nome da ABA<span class="cab-font-outra-cor"> (Ou qualquer outra coisa)</span></span>
             </section>
 
             <section class="cab-usu-mainPage">
-                <span class="txt-aba-mainPage">Nome Da Aba</span>
                 <img class="img-usu-main-page" src="../../assets/unknow_user.png">
             </section>
 
             
         </header>
         <div class="body-main-page">
-
             <img class="main-img" src="../../assets/gym.jpg">
+            <section>
+                
+            </section>
         </div>
         
     </div>
 </template>
 
 <script>
+
 export default {
     data(){
         return{
