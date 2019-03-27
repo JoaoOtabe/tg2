@@ -3,49 +3,55 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 
 
-
-header{
-    width: 100%;
-    height: 53px;
-}
 .cabecalio-mainPage{
+
+    width: 100%;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+
     border-bottom: 2px solid rgba(195, 160, 216, 0.651);
     background-color: rgba(243, 198, 223, 0.651);
-    >.cab-perfil-mainPage{
-        width: 17%;
+    >.cab-logo-academia{
+        width: 100%;
         height: 100%;
-        float: left;
         background-color: rgba(197, 99, 241, 0.651);
-        >.img-perfil-main-page{
-            margin-top: 6px;
-            margin-left: 6px;
-            border: 1px solid red;
-            border-radius: 100px;  
-            padding: 1px; 
+        >.img-logo-main-page{
+            height: 25%;
+            width: 25%;
+            margin-top: 20px;        
+            margin-left: 30%;
+
             &:hover{
                 transform: scale(1.1);
                 transition: 0.5s;
 
             }
         }
-
-        >.txt-nome-usuario{
-            width: 100%;
-            height: 100%;
-            padding-top: 10px;
-        }
     }
 
-    >.cab-abas-mainPage{
-        width: 30%;
+    >.cab-aba-central{
+        height: 25%;
+        width: 25%;
+        margin-top: 20px;        
+        margin-left: 30%;
+        text-align: center;
+    }
+
+    >.cab-usu-mainPage{
+        width:100%;
         height: 100%;
-        float: left;
-        >.img-aba-main-page{
-            margin-top: 6px;
-            margin-left: 6px;
+        display: block;
+        >.img-usu-main-page{
+            height: 30px; 
+            width: 30px;
+            margin-top: 17px;
+            // margin-left: 6px;
+            float: right;
             border: 1px solid red;
             border-radius: 100px;  
             padding: 1px; 
+            margin-right: 6px;
             &:hover{
                 transform: scale(1.1);
                 transition: 0.5s;
@@ -53,6 +59,23 @@ header{
         }
     }
 
+}
+
+
+.body-main-page{
+    display: grid;
+    >.main-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( to bottom, rgba(177, 115, 212, .8),rgba(193, 75, 140, .8));
+    }
 }
 
 

@@ -1,18 +1,26 @@
 <template>
     <div>
-        <header class="cabecalio-mainPage" role="banner">
-            <section class="cab-perfil-mainPage">
-                <img class="img-perfil-main-page" src="../../assets/default-icon.png" alt="" style="height: 30px; width: 30px;">
-                <span class="txt-nome-usuario">Nome do ser</span>
+        <header class="cabecalio-mainPage">
+            <section class="cab-logo-academia">
+                <img class="img-logo-main-page" src="../../assets/default-icon.png">
             </section>
             
-            <section class="cab-abas-mainPage">
-                <img class="img-aba-main-page" src="../../assets/unknow_user.png" alt="" style="height: 30px; width: 30px;">
+            <section class="cab-aba-central">
+                <h1>Nome da ABA (Ou qualquer outra coisa)</h1>
+            </section>
+
+            <section class="cab-usu-mainPage">
                 <span class="txt-aba-mainPage">Nome Da Aba</span>
+                <img class="img-usu-main-page" src="../../assets/unknow_user.png">
             </section>
 
             
         </header>
+        <div class="body-main-page">
+
+            <img class="main-img" src="../../assets/gym.jpg">
+        </div>
+        
     </div>
 </template>
 
