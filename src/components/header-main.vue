@@ -2,7 +2,7 @@
     <div>
         <div class="cabecalio-mainPage">
             <section class="cab-logo-academia">
-                <img class="img-logo-main-page" src="../../assets/default-icon.png">
+                <img class="img-logo-main-page" src="../assets/default-icon.png">
             </section>
             
             <section class="cab-aba-central">
@@ -10,7 +10,9 @@
             </section>
 
             <section class="cab-usu-mainPage">
-                <img class="img-usu-main-page" src="../../assets/unknow_user.png">
+               
+                <i class="far fa-bell fa-2x"></i>
+                <img class="img-usu-main-page" src="../assets/unknow_user.png">
             </section>
 
             

@@ -41,16 +41,31 @@
     }
 
     >.cab-usu-mainPage{
+        align-self: center;
         margin-right: 13%;
         justify-content: center;
 
+
+        .fa-bell{
+            margin-left: 70%;
+            margin-top: 2.5%;
+            color: azure;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.5s;
+            }  
+        }
+
+
         >.img-usu-main-page{
+            cursor: pointer;
             max-width:45px;
             float: right;
             height: auto;
             width: auto;
-            margin-top: 10px;  
-            border: 1px solid red;
+            margin: 5 7% 2 95%;
+            border: 2px solid azure;
             border-radius: 100px;
             &:hover{
                 transform: scale(1.1);
